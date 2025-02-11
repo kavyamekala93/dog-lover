@@ -33,11 +33,12 @@ import {
             Dog Lover App Sign In
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
-          <TextField id="name" label="Name"
-              
-              fullWidth              
-              autoFocus
-              sx={{ mb: 2 }}
+          <TextField 
+            id="name" 
+            label="Name"             
+            fullWidth              
+            autoFocus
+            sx={{ mb: 2 }}
             />
             <TextField 
               id="email" 
@@ -46,19 +47,6 @@ import {
               autoFocus
               sx={{ mb: 2 }}
             />
-            {/* <TextField
-              placeholder="Enter username"
-              fullWidth
-              required
-              autoFocus
-              sx={{ mb: 2 }}
-            />
-            <TextField
-              placeholder="Enter password"
-              fullWidth
-              required
-              type="password"
-            /> */}
             <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
@@ -67,18 +55,6 @@ import {
               Sign In
             </Button>
           </Box>
-          {/* <Grid2 container justifyContent="space-between" sx={{ mt: 1 }}>
-            <Grid2 item>
-              <Link component={RouterLink} to="/forgot">
-                Forgot password?
-              </Link>
-            </Grid2>
-            <Grid2 item>
-              <Link component={RouterLink} to="/register">
-                Sign Up
-              </Link>
-            </Grid2>
-          </Grid2> */}
         </Paper>
       </Container>
     );
